@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="UI.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="ui">
+            <div class="mainBar">
+                <h1>BookStuffs.com</h1>
+            </div>
+              <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="file:///C:/Users/Dumma/Desktop/New%20UI/UI.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="file:///C:/Users/Dumma/Desktop/New%20UI/UISell.html">Sell</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Year
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">1st year</a>
+                              <a class="dropdown-item" href="#">2nd year</a>
+                              <a class="dropdown-item" href="#">3rd year</a>
+                              <a class="dropdown-item" href="#">4th year</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                       <form class="form-inline">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link" href="file:///C:/Users/Dumma/Desktop/New%20UI/UICart.html">Cart</a>
+                        </li>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Log In
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                      
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Log In</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                                <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Password</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <br>
+                                        <br>
+                                        <label>New to BookStuffs.com, then </label>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1"S>Sign Up</button>
+                            </form>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal" id="myModal1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Sign Up</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                    <form>
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1"> Register Number </label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1"> Name </label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                            </div>  
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1"> Date of Birth (ddmmyyyy)</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                            </div>                                                                                    
+                                            <div class="form-group">
+                                              <label for="exampleInputEmail1"> Email address</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleInputPassword1"> Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="exampleInputPassword1">Reenter Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                                  </div>
+                                            <div class="form-group form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">I agree to the Terms & Conditions</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+            <div class="wrapper">
+                <div class="ad">
+                   <div class="category">
+                        <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">Aerospace Engineering</a>  
+                                <a href="#" class="list-group-item list-group-item-action">Advanced Manufacturing</a>      
+                                <a href="#" class="list-group-item list-group-item-action">Bioengineering</a>  
+                                <a href="#" class="list-group-item list-group-item-action">Bioinformatics</a>
+                                <a href="#" class="list-group-item list-group-item-action">Biotechnology</a>
+                                <a href="#" class="list-group-item list-group-item-action">Chemical Engineering</a>  
+                                <a href="#" class="list-group-item list-group-item-action">Civil Engineering</a>  
+                                <a href="#" class="list-group-item list-group-item-action active" onmouseover="selectYear()">
+                                        Computer Science & Engineering
+                                </a>    
+                                <a href="#" class="list-group-item list-group-item-action">Electrical & Electronics Engineering</a>               
+                                <a href="#" class="list-group-item list-group-item-action">Electronics & Communication Engineering</a>
+                                <a href="#" class="list-group-item list-group-item-action">Information Technology</a>
+                                <a href="#" class="list-group-item list-group-item-action">Information & Communication Technology</a> 
+                                <a href="#" class="list-group-item list-group-item-action">Mechanical Engineering</a>
+                                <a href="#" class="list-group-item list-group-item-action">Mechatronics</a>   
+                                <a href="#" class="list-group-item list-group-item-action">Power Systems</a>                            </div>
+                   </div>
+                </div>
+                <div class="buy">
+                    <div class="buy1">
+                        <img src="download (1).jpg" alt="book1">
+                        <br>
+                        <h6>Semester 4</h6>
+                        <h4 onClick="window.open('file:///C:/Users/Dumma/Desktop/New%20UI/UIJava.html');">The Complete Reference JAVA<i>TM</i></h4>
+                        Herbert Schildt
+                        <br>
+                        Tata McGraw Hill, 9th Edition , 2014
+                        <br>
+                        <h4>₹ <del>524</del> 200</h4>
+                        <button type="submit" class="btn btn-primary" onClick="window.open('file:///C:/Users/Dumma/Desktop/UIJava.html');"">Buy</button>
+                        <button type="submit" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="buy1">
+                            <img src="61Oy9qQSTOL._SX380_BO1,204,203,200_.jpg" alt="book1">
+                            <br>
+                            <h6>Semester 4</h6>
+                            <h4>Advanced Microprocessors...</h4>
+                            AK Ray, K M Bhurchandi
+                            <br>
+                            Tata McGraw Hill, 2nd Edition , 19th Reprint, 2011 
+                            <br>
+                            <h4>₹ 150</h4>
+                            <button type="submit" class="btn btn-primary">Buy</button>
+                            <button type="submit" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="buy1">
+                            <img src="download (2).jpg" alt="book1">
+                            <br>
+                            <h6>Semester 4</h6>
+                            <h4>Computer Organization and...</h4>
+                            William Stallings
+                            <br>
+                            Prentice Hall of India: 7th Edition, 2006 
+                            <br>
+                            <h4>₹ <del>450</del> 125</h4>
+                            <button type="submit" class="btn btn-primary">Buy</button>
+                            <button type="submit" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="buy1">
+                            <img src="engineering-mathematics-volume-3-original-imad9gfzcwjfjpwc.jpeg" alt="book1">
+                            <br>
+                            <h6>Semester 4</h6>
+                            <h4>Engineering Mathematics</h4>
+                            Dr.P.Kandasamy et al.
+                            <br>
+                            Vol. III, S.Chand & Co.: 2009
+                            <br>
+                            <br>
+                            <h4>₹ <del>275</del> 105</h4>
+                            <button type="submit" class="btn btn-primary">Buy</button>
+                            <button type="submit" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="buy1">
+                            <img src="9780070265127-us.jpg" alt="book1">
+                            <br>
+                            <h6>Semester 4</h6>
+                            <h4>Object oriented System Development</h4>
+                            Ali Bahrami.
+                            <br>
+                            Tata McGraw Hill: 2008. 
+                            <br>
+                            <br>
+                            <h4>₹ <del>275</del> 105</h4>
+                            <button type="submit" class="btn btn-primary">Buy</button>
+                            <button type="submit" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="buy1">
+                            <img src="51OCndFGR3L._SX394_BO1,204,203,200_.jpg" alt="book1">
+                            <br>
+                            <h6>Semester 4</h6>
+                            <h4>The Essential Guide to User Interface Design</h4>
+                            Wilbert O. Galitz
+                            <br>
+                            3rd Edition, John Wiley, March 2007
+                            <br>
+                            <h4>₹ <del>275</del> 105</h4>
+                            <button type="submit" class="btn btn-primary">Buy</button>
+                            <button type="submit" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="buy1">
+                            <img src="41+tcBZh7NL._SX395_BO1,204,203,200_.jpg" alt="book1">
+                            <br>
+                            <h6>Semester 3</h6>
+                            <h4>Data Structures: A Pseudocode Approach</h4>
+                            Richard F.Gilberg  et al.
+                            <br>
+                            Thomson Learning: 2nd Edition, 2007
+                            <br>
+                            <h4>₹ <del>275</del> 105</h4>
+                            <button type="submit" class="btn btn-danger">Out of Stock!!</button>
+                            <button type="submit" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="buy1">
+                            <img src="download (4).jpg" alt="book1">
+                            <br>
+                            <h6>Semester 3</h6>
+                            <h4> Applied Discrete Structures for...</h4>
+                            Alan Doerr and Kenneth Levasseur
+                            <br>
+                            2nd Edition, Pearson Education: 2007
+                            <br>
+                            <h4>₹ 100</h4>
+                            <button type="submit" class="btn btn-primary">Buy</button>
+                            <button type="submit" class="btn btn-danger">Add to Cart</button>
+                        </div>
+                        <div class="buy1">
+                                <img src="download (3).jpg" alt="book1">
+                                <br>
+                                <h6>Semester 3</h6>
+                                <h4>Computer Graphics C version</h4>
+                                Donald Hearn and Pauline Baker
+                                <br>
+                                Dorling Kindersley(India) Pvt. Ltd: 2nd Edition, 2009
+                                <br>
+                                <h4>₹ 100</h4>
+                                <button type="submit" class="btn btn-primary">Buy</button>
+                                <button type="submit" class="btn btn-danger">Add to Cart</button>
+                            </div>
+                            <div class="buy1">
+                                    <img src="41quNI7EQ-L._SX395_BO1,204,203,200_.jpg" alt="book1">
+                                    <br>
+                                    <h6>Semester 3</h6>
+                                    <h4>Fundamentals of Database Systems</h4>
+                                    R.Elmasri and S.B.Navathe
+                                    <br>
+                                    Addison Wesley: 6th Edition, 2010
+                                    <br>
+                                    <br>
+                                    <h4>₹ 100</h4>
+                                    <button type="submit" class="btn btn-primary">Buy</button>
+                                    <button type="submit" class="btn btn-danger">Add to Cart</button>
+                                </div>
+                </div>
+            </div>
+            <br>
+                <br>
+                <br>
+                
+                        <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Github</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Facebook</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Twiiter</a>
+                                      </li>
+                              </ul> 
+        </div>
+    </body>
+</html>

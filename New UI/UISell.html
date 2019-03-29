@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="UI.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="ui">
+            <div class="mainBar">
+                <h1>BookStuffs.com</h1>
+            </div>
+              <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="file:///C:/Users/Dumma/Desktop/New%20UI/UI.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="file:///C:/Users/Dumma/Desktop/New%20UI/UISell.html">Sell</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Year
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">1st year</a>
+                              <a class="dropdown-item" href="#">2nd year</a>
+                              <a class="dropdown-item" href="#">3rd year</a>
+                              <a class="dropdown-item" href="#">4th year</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                       <form class="form-inline">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link" href="file:///C:/Users/Dumma/Desktop/New%20UI/UICart.html">Cart</a>
+                        </li>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Log In
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                      
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Log In</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                                <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Password</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <br>
+                                        <br>
+                                        <label>New to BookStuffs.com, then </label>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1"S>Sign Up</button>
+                            </form>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal" id="myModal1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Sign Up</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                    <form>
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1"> Register Number </label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1"> Name </label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                            </div>  
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1"> Date of Birth (ddmmyyyy)</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                            </div>                                                                                    
+                                            <div class="form-group">
+                                              <label for="exampleInputEmail1"> Email address</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleInputPassword1"> Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="exampleInputPassword1">Reenter Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                                  </div>
+                                            <div class="form-group form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">I agree to the Terms & Conditions</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                
+                      <br>
+                <div class="wrapper">
+                    <div></div>
+                    <div>
+                            <form>
+                                    <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Semester</label>
+                                            <div class="col-sm-7">
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                            <option>7</option>
+                                                            <option>8</option>
+                                                          </select>
+                                            </div>
+                                            
+                                          </div>
+                                          
+                                    <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Name of the Book</label>
+                                            <div class="col-sm-7">
+                                              <input type="email" class="form-control" id="inputEmail3" placeholder="Name of the Book">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Author of the Book</label>
+                                            <div class="col-sm-7">
+                                              <input type="password" class="form-control" id="inputPassword3" placeholder="Author of the Book">
+                                            </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Publisher of the Book</label>
+                                                    <div class="col-sm-7">
+                                                      <input type="email" class="form-control" id="inputEmail3" placeholder="Publisher of the Book">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group row">
+                                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Edition of the Book</label>
+                                                    <div class="col-sm-7">
+                                                      <input type="password" class="form-control" id="inputPassword3" placeholder="Edition of the Book">
+                                                    </div>  
+                                                    </div>
+                                                    <div class="form-group row">
+                                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Course related to the book</label>
+                                                            <div class="col-sm-7">
+                                                              <input type="password" class="form-control" id="inputPassword3" placeholder="Course related to the book">
+                                                            </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Selling Price</label>
+                                                            <div class="col-sm-7">
+                                                              <input type="password" class="form-control" id="inputPassword3" placeholder="Share knowledge freely">
+                                                            </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                    
+                           </form>
+                    </div>
+                    <div></div>
+                </div>
+                <br>
+                <br>
+                <br>
+                
+                        <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Github</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Facebook</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Twiiter</a>
+                                      </li>
+                              </ul> 
+                            
+                </div>
+                </body>
+                </html>
